@@ -2,9 +2,9 @@
 {
     "name": "session-ROCHANA",
     "description": "Web Session Generator",
-    "logo": "image url",
+    "logo": "https://ibb.co/YB4NpsTt",
     "repository": "https://github.com/rochana2010/session-ROCHANA",
-    "keywords": ["Malvin-Tech"],
+    "keywords": ["ROCHANA-MD"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
