@@ -6,7 +6,7 @@ const pino = require("pino");
 const { Storage } = require("megajs");
 
 const {
-    default: Malvin_Tech,
+    default: ROCHANA_BOT,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -28,8 +28,8 @@ function randomMegaId(length = 6, numberLength = 4) {
 async function uploadCredsToMega(credsPath) {
     try {
         const storage = await new Storage({
-            email: 'nexusxd.bot@gmail.com', // Your Mega A/c Email Here
-            password: 'malvin266' // Your Mega A/c Password Here
+            email: 'bandarajandeepa@gmail.com,' // Your Mega A/c Email Here
+            password: 'Harshana12@#' // Your Mega A/c Password Here
         }).ready;
         console.log('Mega storage initialized.');
 
@@ -105,7 +105,7 @@ router.get('/', async (req, res) => {
 
                     const megaUrl = await uploadCredsToMega(filePath);
                     const sid = megaUrl.includes("https://mega.nz/file/")
-                        ? 'botname-MD~' + megaUrl.split("https://mega.nz/file/")[1]
+                        ? 'ROCHANA-MD~' + megaUrl.split("https://mega.nz/file/")[1]
                         : 'Error: Invalid URL';
 
                     console.log(`Session ID: ${sid}`);
@@ -113,22 +113,22 @@ router.get('/', async (req, res) => {
                     const session = await Malvin.sendMessage(Malvin.user.id, { text: sid });
 
                     const MALVIN_TEXT = `
-🎉 *Welcome to Botname!* 🚀  
+🎉 *Welcome to ROCHANA-MD!* 🚀  
 
-🔒 *Your Session ID* is ready!  ⚠️ _Keep it private and secure — dont share it with anyone._ 
+🔒 *Your Session ID* is ready!  POWERD BY ROCHANA-MD BOT ⚠️ _Keep it private and secure — dont share it with anyone._ 
 
 🔑 *Copy & Paste the SESSION_ID Above*🛠️ Add it to your environment variable: *SESSION_ID*.  
 
 💡 *Whats Next?* 
-1️⃣ Explore all the cool features of botname.
+1️⃣ Explore all the cool features of ROCHANA-MD.
 2️⃣ Stay updated with our latest releases and support.
 3️⃣ Enjoy seamless WhatsApp automation! 🤖  
 
-🔗 *Join Our Support Channel:* 👉 [Click Here to Join](https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z) 
+🔗 *Join Our Support GROUP:* 👉 [Click Here to Join](https://chat.whatsapp.com/ES2ooUhtxicEynbon2GTyr) 
 
-⭐ *Show Some Love!* Give us a ⭐ on GitHub and support the developer of: 👉 [Malvin King GitHub Repo](https://github.com/kingmalvn/)  
+⭐ *Show Some Love!* Give us a ⭐ on GitHub and support the developer of: 👉 [Malvin King GitHub Repo](https://github.com/rochana2010/)  
 
-🚀 _Thanks for choosing BOTNAME — Let the automation begin!_ ✨`;
+🚀 _Thanks for choosing ROCHANA-MD — Let the automation begin!_ ✨`;
 
                     await Malvin.sendMessage(Malvin.user.id, { text: MALVIN_TEXT }, { quoted: session });
 
