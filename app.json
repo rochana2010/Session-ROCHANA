@@ -1,9 +1,9 @@
 
 {
-    "name": "session name",
+    "name": "session-ROCHANA",
     "description": "Web Session Generator",
     "logo": "image url",
-    "repository": "https://github.com/username/sesssion name",
+    "repository": "https://github.com/rochana2010/session-ROCHANA",
     "keywords": ["Malvin-Tech"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
